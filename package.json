@@ -1,0 +1,60 @@
+{
+  "name": "juntossefaz-test",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leandro-Sales1/juntossefaz-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Leandro-Sales1/juntossefaz-test/issues"
+  },
+  "homepage": "https://github.com/Leandro-Sales1/juntossefaz-test#readme",
+  "dependencies": {
+    "@hookform/resolvers": "^7.0.9",
+    "@prisma/client": "6.19.0",
+    "@tanstack/react-query": "^5.108.4",
+    "@trpc/client": "^11.32.2",
+    "@trpc/server": "^11.32.2",
+    "@trpc/tanstack-react-query": "^11.32.2",
+    "lucide-react": "^1.82.0",
+    "next": "^15.5.29",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-hook-form": "^7.92.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.7",
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.11",
+    "@types/react": "^19.3.3",
+    "@types/react-dom": "^19.3.0",
+    "autoprefixer": "^10.7.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^15.5.7",
+    "postcss": "^8.5.34",
+    "prettier": "^3.10.1",
+    "prisma": "6.19.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3",
+    "vitest": "^5.1.2"
+  }
+}

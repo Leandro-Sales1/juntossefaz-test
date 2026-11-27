@@ -1,0 +1,8 @@
+node_modules
+.next
+coverage
+test.md
+next-env.d.ts
+prisma/schema.prisma
+.env.example
+.gitignore
