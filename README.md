@@ -4,7 +4,7 @@ Plataforma de gerenciamento e acompanhamento de cobranças PIX em ambiente sandb
 
 ## Tecnologias
 
-Next.js (App Router), React, TypeScript estrito, Tailwind CSS, React Hook Form, Zod, tRPC, Prisma, PostgreSQL, Vitest e Docker Compose.
+Next.js (App Router), React, TypeScript estrito, Tailwind CSS, React Hook Form, Zod, tRPC, Prisma, PostgreSQL gerenciado no Supabase e Vitest.
 
 ## Funcionalidades
 
@@ -24,8 +24,8 @@ O adapter usa `POST /pix` da base `https://www.juntosefaz.com.br/gateway/api/v1`
 
 ## Execução
 
-1. Copie `.env.example` para `.env` e configure o token de sandbox.
-2. `docker compose up -d`
+1. Crie um projeto Supabase e copie as URLs de pooler para o `.env` (não use a URL de API). Use o pooler de transações (`:6543`, com `pgbouncer=true`) em `DATABASE_URL` e o de sessão (`:5432`) em `DIRECT_URL`; inclua `sslmode=require`.
+2. Copie `.env.example` para `.env`, configure as URLs e, quando disponível, o token de sandbox.
 3. `npm install`
 4. `npm run prisma:generate`
 5. `npm run prisma:migrate -- --name init`
